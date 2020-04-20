@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    android:id="@+id/my_toolbar"
+    layout="@layout/toolbar"/>
+
+       <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:tools="http://schemas.android.com/tools"
+           android:id="@+id/activity_main"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#40C4FF"
+           android:paddingBottom="15dp"
+           android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           android:paddingTop="15dp"
+           tools:context="com.alttab.vcu.storyboard.ProfileActivity">
+
+
+           <ImageView
+               android:id="@+id/imageView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true"
+               android:src="@drawable/ic_account_circle_black_100dp" />
+
+           <TextView
+               android:id="@+id/ProfileFname"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/imageView1"
+               android:layout_centerHorizontal="true"
+               android:ems="10"
+               android:hint="First name"
+               android:inputType="textPersonName"
+               android:selectAllOnFocus="true"
+               android:textAlignment="center"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/ProfileLname"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignStart="@+id/ProfileFname"
+               android:layout_below="@+id/ProfileFname"
+               android:layout_marginTop="21dp"
+               android:ems="10"
+               android:hint="Last Name"
+               android:inputType="textPersonName"
+               android:textAlignment="center"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/ProfileEmail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/ProfileLname"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="13dp"
+               android:ems="10"
+               android:hint="Email"
+               android:inputType="textEmailAddress"
+               android:textAlignment="center"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/ProfileBio"
+               android:layout_width="wrap_content"
+               android:layout_height="100dp"
+               android:layout_alignStart="@+id/ProfileEmail"
+               android:layout_below="@+id/ProfileEmail"
+               android:layout_marginTop="21dp"
+               android:ems="10"
+               android:hint="Bio"
+               android:textAlignment="center"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/ProfileLocation"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/editText10"
+               android:layout_alignBottom="@+id/editText10"
+               android:layout_alignStart="@+id/ProfileBio"
+               android:layout_marginStart="16dp"
+               android:ems="10"
+               android:hint="Location"
+               android:textAlignment="center"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <Button
+               android:id="@+id/ProfileEdit"
+               style="@android:style/Widget.Button"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentStart="true"
+               android:text="Edit"
+               android:textSize="16sp"
+               android:textStyle="normal|bold" />
+
+           <TextView
+               android:id="@+id/editText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/ProfileFname"
+               android:layout_alignBottom="@+id/ProfileFname"
+               android:layout_alignEnd="@+id/imageView1"
+               android:background="@null"
+               android:ems="10"
+               android:inputType="textPersonName"
+               android:text="First Name:"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/editText7"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/ProfileLname"
+               android:layout_alignBottom="@+id/ProfileLname"
+               android:layout_alignStart="@+id/editText"
+               android:background="@null"
+               android:ems="10"
+               android:inputType="textPersonName"
+               android:text="Last Name:"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/editText8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/ProfileEmail"
+               android:layout_alignBottom="@+id/ProfileEmail"
+               android:layout_alignStart="@+id/editText7"
+               android:background="@null"
+               android:ems="10"
+               android:inputType="textPersonName"
+               android:text="Email:"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/editText9"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/ProfileBio"
+               android:layout_alignBottom="@+id/ProfileBio"
+               android:layout_alignStart="@+id/editText8"
+               android:background="@null"
+               android:ems="10"
+               android:inputType="textPersonName"
+               android:text="Bio:"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/editText10"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignStart="@+id/editText9"
+               android:layout_below="@+id/ProfileBio"
+               android:layout_marginTop="15dp"
+               android:background="@null"
+               android:ems="10"
+               android:inputType="textPersonName"
+               android:text="Location:"
+               android:textSize="18sp"
+               android:textStyle="bold" />
+
+
+       </RelativeLayout>
+</LinearLayout>

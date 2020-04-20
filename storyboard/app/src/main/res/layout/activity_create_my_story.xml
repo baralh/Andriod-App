@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#64B5F6"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        tools:context="com.alttab.vcu.storyboard.ProfileActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="76dp"
+            android:text="Title:"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/createstory_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignStart="@+id/createstory_text"
+            android:ems="10"
+            android:hint="@string/enter_title_here"
+            android:inputType="textPersonName"
+            android:maxLength="50" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="42dp"
+            android:text="Story:"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="30sp" />
+        <ImageView android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:id="@+id/createstory_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:ems="10"
+            android:hint="@string/begin_your_story_by_writing_between_5_to_150_characters"
+            android:inputType="textMultiLine"
+            android:maxLength="150" />
+
+
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:text="Submit"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+    </RelativeLayout>
+</LinearLayout>

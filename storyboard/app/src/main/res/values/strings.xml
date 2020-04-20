@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">StoryBoard</string>
+    <string name="default_web_client">460765943070-kqi223fot23r7opf3v602eqt3jqjgre3.apps.googleusercontent.com</string>
+    <string name="storyboard">StoryBoard</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_settings">Setting</string>
+    <string name="action_create_new_story">Create New</string>
+    <string name="action_goto_main">Home</string>
+    <string name="button_logout">LogOut</string>
+    <string name="button_login">Login</string>
+    <string name="title_activity_profile">profile</string>
+    <string name="title_activity_main_list">MainList</string>
+    <string name="action_login">Login</string>
+    <string name="title_activity_about_app">About the App</string>
+    <string name="enter_title_here">Enter Title Here</string>
+    <string name="begin_your_story_by_writing_between_5_to_150_characters">Begin your story by writing between 5 to 150 characters!</string>
+
+</resources>

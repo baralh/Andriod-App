@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E0E0E0"
+                tools:context=".StoryDetails"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+
+        >
+
+        <TextView
+            android:id="@+id/storydetail_storyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:text="TextView"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/storydetail_storyUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/storydetail_storyTitle"
+            android:layout_below="@+id/storydetail_storyTitle"
+            android:layout_marginTop="12dp"
+            android:text="TextView"/>
+
+        <TextView
+            android:id="@+id/storydetail_storyDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/storydetail_storyUserId"
+            android:layout_alignBottom="@+id/storydetail_storyUserId"
+            android:layout_marginStart="64dp"
+            android:layout_toEndOf="@+id/storydetail_storyUserId"
+            android:text="TextView"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/storydetail_storyUserId"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/storydetail_storyChunks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="21dp"
+                android:text="TextView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/storydetail_addChunk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:hint="Add to story"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:id="@+id/storydetail_sendBut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="Send"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
