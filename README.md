@@ -1,6 +1,5 @@
-# android-app-alt-tab
+# StoryBoard App
 
-android-app-alt-tab created by GitHub Classroom
 
 ## Iteration 1
 
