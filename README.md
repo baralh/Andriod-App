@@ -1,5 +1,6 @@
 # StoryBoard App
 
+By alt-tab group in CMSC 355
 
 ## Iteration 1
 
